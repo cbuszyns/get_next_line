@@ -10,6 +10,12 @@
 # include <fcntl.h>
 # include <stdio.h>
 
-
+size_t	ft_strlen(const char *str);
+char	*ft_strchr(char *s, int c);
+char	*ft_strjoin(char *backup, char *buff);
+char	*ft_get_line(char *backup);
+char	*ft_backup(char *backup);
+char	*ft_read_to_backup(int fd, char *backup);
+char	*get_next_line(int fd);
 
 #endif

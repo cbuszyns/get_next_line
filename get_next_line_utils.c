@@ -6,7 +6,7 @@
 /*   By: cbuszyns <cbuszyns@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 11:19:37 by cbuszyns          #+#    #+#             */
-/*   Updated: 2022/02/17 11:53:48 by cbuszyns         ###   ########.fr       */
+/*   Updated: 2022/02/17 14:52:04 by cbuszyns         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strchr(char *s, int c)
 	while (s[i] != '\0')
 	{
 		if (s[i] == (char)c)
-			return ((char *)&s[i])
+			return ((char *)&s[i]);
 		i++;
 	}
 	return (0);
@@ -52,14 +52,14 @@ char	*ft_strjoin(char *backup, char *buff)
 		backup[0] = '\0';
 	}
 	if (!backup || !buff)
-		retunr (NULL);
+		return (NULL);
 	str = malloc(sizeof(char) * ((ft_strlen(backup) + ft_strlen(buff)) + 1));
 	if (str == NULL)
 		return (NULL);
 	i = -1;
 	j = 0;
 	if (backup)
-		while (backup[i++] != '\0')
+		while (backup[++i] != '\0')
 			str[i] = backup[i];
 	while (buff[j] != '\0')
 		str[i++] = buff[j++];
@@ -82,7 +82,7 @@ char	*ft_get_line(char *backup)
 	if (!str)
 		return (NULL);
 	i = 0;
-	while (backup[i] && backup[ii] != '\n')
+	while (backup[i] && backup[i] != '\n')
 	{
 		str[i] = backup[i];
 		i++;
