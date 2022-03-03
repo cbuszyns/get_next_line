@@ -6,7 +6,7 @@
 /*   By: cbuszyns <cbuszyns@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 13:34:10 by cbuszyns          #+#    #+#             */
-/*   Updated: 2022/02/17 14:39:46 by cbuszyns         ###   ########.fr       */
+/*   Updated: 2022/03/03 10:43:25 by cbuszyns         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_read_to_backup(int fd, char *backup)
 			return (NULL);
 		}
 		buff[bytes] = '\0';
-		backup = ft_strjoin(backup, buff);;
+		backup = ft_strjoin(backup, buff);
 	}
 	free(buff);
 	return (backup);

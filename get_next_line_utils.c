@@ -6,7 +6,7 @@
 /*   By: cbuszyns <cbuszyns@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 11:19:37 by cbuszyns          #+#    #+#             */
-/*   Updated: 2022/02/17 14:52:04 by cbuszyns         ###   ########.fr       */
+/*   Updated: 2022/03/03 10:44:48 by cbuszyns         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlen(const char *str)
 {
-	int count;
-	
+	int	count;
+
 	count = 0;
 	while (str[count])
 		count++;
@@ -46,7 +46,7 @@ char	*ft_strjoin(char *backup, char *buff)
 	size_t	j;
 	char	*str;
 
-	if(!backup)
+	if (!backup)
 	{
 		backup = (char *)malloc(1 * sizeof(char));
 		backup[0] = '\0';
